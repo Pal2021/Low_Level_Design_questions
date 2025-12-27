@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Low_level_Design.iml" filepath="$PROJECT_DIR$/Low_level_Design.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tic-Tac-Toe_Game/Tic-Tac-Toe_Game.iml" filepath="$PROJECT_DIR$/Tic-Tac-Toe_Game/Tic-Tac-Toe_Game.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Unix_File_Search/Unix_File_Search.iml" filepath="$PROJECT_DIR$/Unix_File_Search/Unix_File_Search.iml" />
     </modules>
   </component>
 </project>
