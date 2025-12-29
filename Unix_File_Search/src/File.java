@@ -1,4 +1,6 @@
 
+import javax.swing.text.html.parser.Entity;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
@@ -39,6 +41,12 @@ public class File {
 
     public void addEntry(final File entry){
         entries.add(entry);
+    }
+    public Set<File> getEntries() {
+        if (!isDirectory) {
+            return Collections.emptySet();
+        }
+        return new HashSet<>(entries);
     }
 
 }

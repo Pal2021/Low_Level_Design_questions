@@ -1,0 +1,31 @@
+import org.junit.Test;
+
+import java.util.List;
+
+import static org.junit.Assert.assertEquals;
+
+public class FileSearchTest {
+    public static void main(String[] args) {
+        final File root=new File(true,0,"adam","root");
+        final File a=new File(false,2000,"adam","a");
+        final File b=new File(false,6000,"george","b");
+
+        root.addEntry(a);
+        root.addEntry(b);
+
+        final FileSearchCriteria criteria=new FileSearchCriteria(new AndPredicate(List.of(new SimplePredicate<>(FileAttribute.IS_DIRECTORY,new EqualsOperator<>(),false),new SimplePredicate<>(FileAttribute.OWNER,new RegexMatchOperator<>(),"ge."))));
+
+        final FileSearch fileSearch=new FileSearch();
+        final  List<File>result=fileSearch.search(root,criteria);
+
+        assertEquals(1,result.size());
+
+
+
+    }
+    @Test
+    public void testFileSearch(){
+
+
+    }
+}
