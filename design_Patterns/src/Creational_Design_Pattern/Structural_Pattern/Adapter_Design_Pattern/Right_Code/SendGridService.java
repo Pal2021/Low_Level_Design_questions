@@ -1,0 +1,9 @@
+package Creational_Design_Pattern.Structural_Pattern.Adapter_Design_Pattern.Right_Code;
+
+public class SendGridService {
+    public void sendEmail(String recipient, String title, String content){
+        System.out.println("Sending email via SendGrid to " + recipient);
+        System.out.println("Title: " + title);
+        System.out.println("Content: " + content);
+    }
+}
