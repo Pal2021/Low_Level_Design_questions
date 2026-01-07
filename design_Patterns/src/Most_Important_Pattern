@@ -1,26 +1,21 @@
 🏗️CREATIONAL (5 patterns)
-
 Singleton
 Factory Method
 Builder
 Abstract Factory
 Prototype
 
-
 🏛️ STRUCTURAL (5 patterns)
-
 Adapter
 Decorator ✓ (You learned)
 Facade
 Proxy ✓ (You learned)
 Composite
 
-
 🎭 BEHAVIORAL (5 patterns)
-
-Strategy
-Observer
-Template Method
+Strategy- done
+Observer- done
+Template Method - done
 Command
 State
 
